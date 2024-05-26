@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/logo.png" type="png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allison&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Alor Street</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ============================================ -->
+<!--                 Header                   -->
+<!-- ============================================ -->
+
+<body>
+    <div class="shell">
+        <header>
+            <div class="img"></div>
+        </header>
+    </div>
+</body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/header.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Menu
+                            <img class="cs-drop-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
+                                alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Entree</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Roti</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Soup</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Rice</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Noodles</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Mains</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Drinks</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Dessert</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="images/icons/phone.png" alt="logo" width="24" height="24"
+                    aria-hidden="true" decoding="async">
+                +61 426 608 880
+            </a>
+            <div class="cs-social">
+                <a href="https://www.facebook.com/alorstmelb/" class="cs-social-link">
+                    <img class="cs-social-icon"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo"
+                        width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo"
+                        width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/alorstreetmelbourne/?hl=en" class="cs-social-link">
+                    <img class="cs-social-icon"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo"
+                        width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo"
+                        width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+
+
+</header>
+
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-75">
+    <div class="cs-container">
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" src="images/section2.jpg">
+                <source media="(min-width: 601px)" src="images/section2.jpg">
+                <img loading="lazy" decoding="async" src="images/section2.jpg" alt="body builder" width="500"
+                    height="552" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Alor Street</span>
+            <h2 class="cs-title">About Us</h2>
+            <p class="cs-text">
+                Alor Street is a Malaysian cuisine restaurant dedicated to bringing the rich, authentic flavors of
+                Malaysia to its patrons, ensuring a delightful and genuine culinary experience.
+                <br><br>
+                We strive to provide a friendly and welcoming experience to all our cherished customers, ensuring that
+                each visit is enjoyable and memorable.
+                <br><br>
+                We look forward to providing you with the best Malaysian cuisine, offering a delightful and authentic
+                culinary experience that you won't forget.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs"
+                href="https://www.facebook.com/alorstmelb/">More</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-350">
+    <div class="cs-container">
+        <div class="cs-left">
+            <!--Big Image-->
+            <picture class="cs-picture cs-picture1" aria-hidden="true">
+                <source media="(max-width: 600px)" src="images/section3_chef.png">
+                <source media="(min-width: 601px)" src="images/section3_chef.png">
+                <img loading="lazy" decoding="async" src="images/section3_chef.png" alt="cleaning supplies" width="672"
+                    height="672">
+            </picture>
+            <!--Medium Image-->
+            <picture class="cs-picture cs-picture2" aria-hidden="true">
+                <source media="(max-width: 600px)" src="images/shrimpWings.png">
+                <source media="(min-width: 601px)" src="images/shrimpWings.png">
+                <img loading="lazy" decoding="async" src="images/shrimpWings.png" alt="cleaning supplies" width="300"
+                    height="300">
+            </picture>
+            <!--Small Image-->
+            <picture class="cs-picture cs-picture3" aria-hidden="true">
+                <source media="(max-width: 600px)" src="images/ThaiFishCake.png">
+                <source media="(min-width: 601px)" src="images/ThaiFishCake.png">
+                <img loading="lazy" decoding="async" src="images/ThaiFishCake.png" alt="cleaner" width="200"
+                    height="200">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">Extra Ordinary Taste And Experienced</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            About Chef
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our chef, with roots in Kuala Lumpur's bustling streets and Kuching's lush landscapes, brings a
+                        genuine passion for Malaysian cuisine
+                        <br><br>
+                        Over the years, our team has endeavored to introduce Mlebourne to the vibrant flavors and
+                        cherished traditions of Malaysia
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Nutrition
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Balanced nutrition is achieved through a combination of various foods, each contributing unique
+                        flavors and nutrients to the diet, making meals both wholesome and enticing.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Environment
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        A comfortable environment, paired with licensed food hygiene standards, ensures a safe and
+                        pleasant dining experience for everyone.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Materials
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Careful selection of high-quality materials, combined with strict food production processes,
+                        guarantees excellence and safety in every dish.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-us-1021">
+    <div class="cs-container">
+        <div class="cs-content">
+            <img class="cs-graphic" aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Ornament.svg" alt="chef" width="456"
+                height="31">
+            <h2 class="cs-title">MENU</h2>
+            <p class="cs-text">
+                Varies kinds of food from Malaysian have been popular in Melbourne
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 767px)" src="images/alorMix.png">
+                    <source media="(min-width: 768px)" src="images/alorMix.png">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/alorMix.png" alt="chef"
+                        width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Entree</span>
+                    <span class="cs-job">Alor Mix Plate</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 767px)" src="images/drink.jpg">
+                    <source media="(min-width: 768px)" src="images/drink.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/drink.jpg" alt="chef"
+                        width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Drink</span>
+                    <span class="cs-job">Kopi</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 767px)" src="images/section3_2.png">
+                    <source media="(min-width: 768px)" src="images/section3_2.png">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/section3_2.png" alt="chef"
+                        width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Mains</span>
+                    <span class="cs-job">Yam Basket</span>
+                </div>
+            </li>
+        </ul>
+        <div class="button-container">
+            <button class="more-btn">See All Dishes</button>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<!-- No headers, so no section tag -->
+<div id="stats-316">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="images/icons/grub.png" alt="icon" width="35" height="40" loading="lazy"
+                    decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-number">Dinning</span>
+                <span class="cs-desc">Dine in or Take away</span>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="images/icons/calendar.png" alt="icon" width="40" height="35" loading="lazy"
+                    decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-number">Reservation</span>
+                <span class="cs-desc">Open for reservation</span>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="images/icons/pins.png" alt="icon" width="40" height="40" loading="lazy"
+                    decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-number">Location</span>
+                <span class="cs-desc">Locate in Huntingdale</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<footer class="footer">
+    <div class="footer-section">
+        <h2>Alor Street</h2>
+    </div>
+    <div class="footer-section">
+        <h3>SERVICES</h3>
+        <ul>
+            <li>Menu</li>
+            <li>Booking tables</li>
+            <li>Take away</li>
+            <li>Banquet</li>
+            <li>Memberships</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>ABOUT</h3>
+        <ul>
+            <li>Our story</li>
+            <li>Team</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>SUBSCRIBE US</h3>
+        <div class="subscribe">
+            <input type="email" placeholder="Email">
+            <button class="send-btn">SEND</button>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</html>
